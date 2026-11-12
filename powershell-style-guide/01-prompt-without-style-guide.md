@@ -1,12 +1,13 @@
 <!-- markdownlint-disable MD013 -->
 <!--
 How to use this prompt (these notes are not part of the prompt):
-- Copy everything below the heading into a new chat with no attachments.
-- Use the same chat assistant and model that you use for 02-prompt-with-style-guide.md.
-- Start a new chat. Turn off memory and any custom instructions that mention PowerShell style; they would change this result.
-- Use a chat where no client history is visible on screen.
+- Used in Act 1 of the talk (chat, before any coding agent appears). Its output is shown live on slide 7, in the problem segment.
+- Run it before the talk in chatgpt.com, in a new chat with no attachments. Don't generate anything live.
+- Use the same chat assistant and model for 04-prompt-with-style-guide.md, so the only difference between the two outputs is the style guide.
+- Turn off memory and any custom instructions that mention PowerShell style; they would change this result.
+- Collapse the chat history sidebar before the talk; past chats can show client names.
 - Record the date and the model name, for the slide label.
-- The task text is identical in both prompt files. The only difference is the first paragraph of 02, which points to the attached style guide.
+- The task text is identical in 01 and 04. The only difference is the first paragraph of 04, which points to the style guide.
 -->
 
 # Prompt Without the Style Guide
