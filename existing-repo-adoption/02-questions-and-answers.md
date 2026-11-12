@@ -1,0 +1,61 @@
+# Anticipated Questions and Answers from the Initial Adoption's Coding Agent
+
+- Q: Approve the recommended set of modules?
+  - Yes
+- Q: For security reporting, choose private vulnerability reporting, a monitored public contact, both, or intentional deferral. If using a contact, what exact contact?
+  - Use private vulnerability reporting, only. Perform your adoption as if I have this enabled, but note it as a follow-up item that I will complete immediately after the adoption process is complete.
+- Q: Accept the template’s 48-hour acknowledgment, seven-day fuller response, and latest-version-only support commitments, or provide alternatives?
+  - Yes.
+- Q: What exact email, form, or maintainer wording should the Code of Conduct use?
+  - Use something generic about contacting the maintainer via their contact information on GitHub.
+- Q: Should @franklesniak own all adopted files, or should CODEOWNERS use different users, teams, or path scopes?
+  - Yes, `@franklesniak` is the sole contributor/owner/maintainer of this repository.
+- Q: Should the missing triage label be created, omitted, replaced, or deferred?
+  - Yes, I will create the `triage` label and anything else that you deem required. Perform your adoption as if I have these created, but note them as a follow-up item that I will complete immediately after the adoption process is complete.
+- Q: Keep Discussions disabled or enable it?
+  - Yes, I will enable Discussions. Perform your adoption as if I have it enabled, but note them as a follow-up item that I will complete immediately after the adoption process is complete.
+- Q: Should support questions remain GitHub Issues?
+  - No, GitHub Discussions should be used for support questions, usage help, and general troubleshooting.
+- Q: Keep `master` during adoption or create a separate future plan to rename it to `main`?
+  - Keep `master` for now, but create a GitHub Issue to track the follow up item to change `master` to `main`.
+- Q: Choose repository rulesets, classic branch protection, unchanged settings, or deferral. If protection is wanted, specify reviewer count, code-owner review, bypasses, force-push/deletion policy, and required checks.
+  - Use the decision-making process defined in `copilot-repo-template`'s `AGENTS.md` file. I want to comply with best practices *but* I am the only maintainer in this repository. So any rules that we adopt have to make sense in that context. Perform your adoption as if I have the rules that you select enabled, but note them as a follow-up item that I will complete immediately after the adoption process is complete.
+- Q: Approve a temporary first-adoption analyzer gate with the 249 warnings recorded as debt, or require all warnings cleared before adoption finalizes?
+  - Use the decision-making process defined in `copilot-repo-template`'s `AGENTS.md` file to decide.
+- Q: Is Windows PowerShell 5.1 support required? Which OS and PowerShell versions should application tests guarantee?
+  - Yes, Windows PowerShell 5.1 support is required. Please also support the Microsoft-supported releases of PowerShell 7 on Windows, macOS, and Linux.
+- Q: Authorize the protected-file actions listed above?
+  - Yes
+- Q: Approve preserving LICENSE.txt?
+  - No, plan on renaming this file to what standards dictate, keeping the MIT license and named author.
+- Q: Approve preserving the existing VS Code edit?
+  - Yes, retain the `window.title` setting change.
+- Q: Approve preserving narrow README adaptations?
+  - Yes. You may make minor adjustments to the `ROMSorter` repo's README, e.g.,:
+    - Preserving the project description, script usage, filenames, examples, and existing workflow.
+    - Fixing the filename-case error: `Convert-MAMEDATToCSV.ps1` → `Convert-MAMEDATToCsv.ps1`.
+    - Adding or adjusting template-required links, badges, contribution/security references, and concise development guidance.
+    - Updating links for the selected modules and actual repository settings.
+    - Recording the README as a downstream customization/local override.
+- Q: Approve preserving a separately reviewed EOL normalization?
+  - Yes. For example, you may:
+    - Preserve the template’s intended EOL rules.
+    - Identify exactly which of the current LF/CRLF files would change.
+    - Perform normalization in a distinct diff or review phase.
+    - Confirm that changes are line-ending-only—no content, encoding, or PowerShell behavior changes.
+    - Preserve the existing `.vscode/settings.json` content change separately (i.e., the `window.title` setting).
+    - Avoid normalizing generated/data files unless the adopted policy explicitly covers them.
+- Q: For implementation, should changes remain uncommitted for inspection, be committed locally, or be prepared as a PR-ready branch?
+  - Keep the final implementation uncommitted for inspection.
+- Q: May implementation install a supported Python tool environment if needed, or should it use an environment you provide?
+  - Yes, you may install a supported Python tool environment if needed.
+- Q: Should we use the local remote-tracking reference: `refs/remotes/origin/codex/template-adoption`
+  - No; that branch was deleted.
+- Q: Approve minimal layout alignment?
+  - Yes. For example, you may:
+    - Add template-required directories such as `.github/`, `.template-sync/`, `schemas/`, tooling paths, and test directories.
+    - Rename `LICENSE.txt` to `LICENSE` while preserving its contents, because license normalization was separately approved.
+    - Add narrowly scoped configuration, validation, and documentation files.
+    - Update links and paths needed for those additions.
+    - Record existing scripts, CSVs, README content, and VS Code settings as downstream-owned/customized paths.
+    - You may also record other reorganization recommendations as to-do items, to be implemented immediately following template adoption.
